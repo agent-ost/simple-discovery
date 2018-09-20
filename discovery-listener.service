@@ -1,0 +1,12 @@
+[Unit]
+AssertPathExists=/home/pi
+
+[Service]
+WorkingDirectory=/home/pi
+ExecStart=/home/pi/listener.py
+Restart=always
+PrivateTmp=true
+NoNewPrivileges=true
+
+[Install]
+WantedBy=default.target
