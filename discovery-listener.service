@@ -2,8 +2,8 @@
 AssertPathExists=/home/pi
 
 [Service]
-WorkingDirectory=/home/pi
-ExecStart=/home/pi/listener.py
+WorkingDirectory=/home/pi/src/simple-discovery
+ExecStart=/home/pi/src/simple-discovery/listener.py
 Restart=always
 PrivateTmp=true
 NoNewPrivileges=true

@@ -10,7 +10,7 @@ Prepare the service:
 
 ```bash
 mkdir -p ~/.config/systemd/user/
-cp discovery-listener.service ~/.config/systemd/user/
+ln -t ~/.config/systemd/user/ -s $PWD/discovery-listener.service
 ```
 
 Start the service:
